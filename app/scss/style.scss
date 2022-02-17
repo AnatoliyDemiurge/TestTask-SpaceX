@@ -7,6 +7,8 @@
 .wrapper{
     background:url(../images/background.jpg);
     background-repeat:no-repeat;
+    position: relative;
+    z-index:2;
 }
 
 .header{
@@ -116,6 +118,30 @@
             border-bottom: 1px solid #989393;
             padding-bottom:10px;
         }
+    }
+}
+
+.intro{
+    &__inner{
+        display:flex;
+        justify-content: space-between;
+
+    }
+    &__travel{
+        padding-top:117px;
+    }
+    &__title{
+        background-image: linear-gradient(-90.0deg, #ff3f04 0%, #ffffff 90%, #ffffff 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: #0B2349;
+        font-family: 'MuseoSansCyrl';
+        font-size: 58px;
+        line-height: 1.2;   
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #ffffff;
+ 
     }
 }
 
