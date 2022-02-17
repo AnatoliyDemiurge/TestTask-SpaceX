@@ -7,10 +7,21 @@
 .wrapper{
     background:url(../images/background.jpg);
     background-repeat:no-repeat;
-    width:100%;
 }
 
 .header{
+    border-bottom: 1px solid #3d3d3d;
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,.21);
+        z-index: 0;
+    }
     &__inner{
         height:100px;
         display:flex;
@@ -18,11 +29,13 @@
         justify-content: space-between;
     }
     &__logo{
+        z-index:1;
         width:314px;
         height:100px;
         padding:26px 15px 40px 25px;
-        border: 1px solid #2b2b2c;
+        border: 1px solid #3d3d3d;
         position:relative;
+        cursor: pointer;
     }
     &__corner{
         background:#ededee;
@@ -94,7 +107,19 @@
         line-height: 22px;
         color: #ffffff;
         font-family:MuseoSansCyrl;
+        font-weight:300;
+        z-index:2;
+        position: relative;
+        cursor:pointer;
+        &:hover{
+            color: #b1b1b1;
+            border-bottom: 1px solid #989393;
+            padding-bottom:10px;
+        }
     }
 }
+
+
+
 
 
