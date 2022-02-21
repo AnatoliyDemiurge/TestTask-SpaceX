@@ -125,7 +125,6 @@
     &__inner{
         display:flex;
         justify-content: space-between;
-
     }
     &__travel{
         padding-top:117px;
@@ -137,11 +136,35 @@
         color: #0B2349;
         font-family: 'MuseoSansCyrl';
         font-size: 58px;
-        line-height: 1.2;   
+        line-height: 0.8;   
         font-weight: 700;
         text-transform: uppercase;
         color: #ffffff;
- 
+        transition :all linear 5s;
+    }
+    &__subtitle{
+        font-family: 'MuseoSansCyrl';
+        background-image: linear-gradient(-90.0deg, #ff3f04 0%, #ffffff 90%, #ffffff 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 25px;
+        font-weight: 300;
+        padding-bottom:86px;
+    }
+    &__btn{
+        width: 180px;
+        height: 35px;
+        border-style: solid;
+        border-width: 1px;
+        border-image-source: linear-gradient(189.0deg, #263e66 20%, #09213d 40%, #111f2d 61%, #23599c 79%);
+        border-image-slice: 1;
+        background-origin: padding-box;
+        background-clip: padding-box;
+        background-color: #070b0f;
+        color:#fff;
+    }
+    &__pic{
+
     }
 }
 
