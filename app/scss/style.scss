@@ -125,6 +125,7 @@
     &__inner{
         display:flex;
         justify-content: space-between;
+        position: relative;
     }
     &__travel{
         padding-top:117px;
@@ -162,8 +163,29 @@
         background-clip: padding-box;
         background-color: #070b0f;
         color:#fff;
+        position: relative;
+        padding:11px 24px;
+        font-family: 'Museo Sans Cyrl';
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 100;
+        color: #ffffff;
+        display:block;
+    }
+    &__corner-left{
+        position:absolute;
+        top:15px;
+        left:-16px;
+    }
+    &__corner-right{
+        position:absolute;
+        top:-16px;
+        left:160px;
     }
     &__pic{
+        position: absolute;
+        top:298px;
+        left:180px;
 
     }
 }
