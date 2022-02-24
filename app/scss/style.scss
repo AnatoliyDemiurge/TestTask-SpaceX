@@ -171,6 +171,7 @@
         font-weight: 100;
         color: #ffffff;
         display:block;
+        cursor: pointer;
     }
     &__corner-left{
         position:absolute;
@@ -193,38 +194,32 @@
     &__cards{
         display:grid;
         grid-template-columns:repeat(2,1fr);
-        // gap:30px;
+        gap:30px;
         // border:5px solid blue;
     }
     &__card{
         // padding:32px 59px 30px 40px;
-        // width:185px;
-        // height:185px;
-        border:1px solid red;
+        width:185px;
+        height:185px;
+        // border:1px solid red;
         // margin:15px;
-        // position:relative;
-        // z-index:2;
-        // opacity:0.65;
-        // display:flex;
-        // flex-direction: column;
-        // align-items:center;
-        // &:after{
-        //     content:'';
-        //     position:absolute;
-        //     width:185px;
-        //     height:185px;
-        //     opacity: 0.02;
-        //     z-index:1;
-        //     top:0;
-        //     left:0;
-        // }
-       
+        position:relative;
+        z-index:2;
+        opacity:0.65;
+        &:after{
+            content:'';
+            position:absolute;
+            opacity: 0.02;
+            z-index:1;
+            top:-25px;
+            left:30px;
+        }
     }
     &__card-1{
         &:after{
-            width: 172px;
-            height: 172px;
-            border-bottom: 200px solid #ffffff;
+            // width: 172px;
+            // height: 172px;
+            border-bottom: 250px solid #ffffff;
             border-left: 200px solid transparent;
         }
     }
@@ -249,10 +244,9 @@
     &__text{
         font-family: 'MuseoSansCyrl';
         font-size: 18px;
-        line-height: 1.2;
+        line-height: 0.3;
         font-weight: 100;
         color: #ffffff;
-        text-align: right;
     }
     &__number{
         color: #ffffff;
@@ -260,6 +254,19 @@
         font-weight: 700;
         font-family: 'MuseoSansCyrl';
         text-align: right;
+        padding-top:15px;
+    }
+    &__text-1{
+        padding-left:120px;
+    }
+    &__text-2{
+        padding-left:69px;
+    }
+    &__text-top-2{
+        padding-top:43px;
+    }
+    &__text-down-2{
+      
     }
 }
 
