@@ -194,7 +194,7 @@
     &__cards{
         display:grid;
         grid-template-columns:repeat(2,1fr);
-        gap:10px;
+        // gap:10px;
         // border:5px solid blue;
     }
     &__card{
@@ -216,29 +216,33 @@
     }
     &__card-1{
         &:after{
-            top:10px;
-            left:30px;  
+            top:-4px;
+            left:20px;  
             // width: 172px;
             // height: 172px;
-            border-bottom: 172px solid #ffffff;
-            border-left: 172px solid transparent;
+            border-bottom: 185px solid #ffffff;
+            border-left: 185px solid transparent;
         }
     }
     &__card-2{
         &:after{
+            top:-5px;
+            left:30px;  
             border-bottom: 185px solid #ffffff;
             border-right: 185px solid transparent;
         }
     }
     &__card-3{
-        
         &:after{
+            top:5px; 
             border-top: 185px solid #ffffff;
             border-left: 185px solid transparent;
         }
     }
     &__card-4{
         &:after{
+            top:5px;
+            left:30px;  
             border-top: 185px solid #ffffff;
             border-right: 185px solid transparent;
         }
